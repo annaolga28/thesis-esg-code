@@ -1,0 +1,12 @@
+# Data and generated outputs (LSEG-licensed / firm-level) - never commit
+*.xlsx
+*.rds
+*.csv
+*.tex
+results_hypotheses/
+
+# R and macOS clutter
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
