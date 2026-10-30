@@ -774,7 +774,7 @@ cat(rows_tex, sep = '\n')
 cat('Reference sector:', sector_levels[1], '\n')
 
 # =============================================================================
-# APPENDIX :CORRELATION TABLE
+# TABLE CHAPTER 5.1 :CORRELATION TABLE
 # =============================================================================
 d  <- readRDS('data_main.rds')
 v  <- c('Y','PriorControversy','Size','esg_score','e_pillar','s_pillar','g_pillar')
