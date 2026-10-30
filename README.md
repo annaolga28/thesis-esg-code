@@ -10,7 +10,7 @@ R code for an MSc thesis (RSM) testing whether ESG scores, pillar scores and ind
 | `appendix_indicator.R` | Appendix tables as LaTeX: the ESG indicators used and how 65 raw indicators become the 27 used in the models (Appendix C) |
 | `hypothesis_testing.R` | Hypothesis tests and robustness checks (logistic regression, elastic net, random forest, gradient boosting) |
 
-`hypothesis_testing.R` is run one section at a time in RStudio (SETUP, then H1 to H5b, then the robustness checks R1 to R5), not sourced top to bottom. Comments inside the scripts still use their earlier file names (01_data_preparation_revised.R, 02/03_appendix_..., 04_hypothesis_tests_revised.R).
+`hypothesis_testing.R` is run one section at a time in RStudio (SETUP, then H1 to H5b, then the robustness checks R1 to R5), not sourced top to bottom. Comments inside the scripts.
 
 ## Data
 
