@@ -772,3 +772,18 @@ rows_tex <- sprintf('%s & %s & %s \\\\', lab[vars_order],
 writeLines(rows_tex, file.path(OUT, 'APPX_LogR_coefficients_rows.tex'))
 cat(rows_tex, sep = '\n')
 cat('Reference sector:', sector_levels[1], '\n')
+
+# =============================================================================
+# APPENDIX :CORRELATION TABLE
+# =============================================================================
+d  <- readRDS('data_main.rds')
+v  <- c('Y','PriorControversy','Size','esg_score','e_pillar','s_pillar','g_pillar')
+cm <- round(cor(d[, v]), 2)
+print(cm)
+write.csv(cm, file.path('results_hypotheses', 'DESC_correlations.csv'))
+
+# Size vs. CO2 and employee accidents, reported values only (no imputed values)
+dn  <- readRDS('data_nan.rds')
+acc <- setdiff(grep('accident', names(dn), value = TRUE), grep('^M_', names(dn), value = TRUE))
+round(sapply(c('co2_equivalent_emissions_total', acc),
+             function(x) cor(dn$Size, dn[[x]], use = 'complete.obs')), 2)
