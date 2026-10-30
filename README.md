@@ -1,4 +1,4 @@
-# Predicting ESG controversies — thesis code
+# Predicting ESG controversies - thesis code
 
 R code for an MSc thesis (RSM) testing whether ESG scores, pillar scores and individual ESG indicators predict future ESG controversies.
 
